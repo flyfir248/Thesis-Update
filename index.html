@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOINC Code Predictor</title>
+</head>
+<body>
+    <h1>Enter your text to predict the LOINC code:</h1>
+    <form method="post" action="{{ url_for('predict_loinc') }}">
+        <textarea name="text" cols="80" rows="10"></textarea><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
